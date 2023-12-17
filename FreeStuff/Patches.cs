@@ -14,7 +14,7 @@ namespace FreeStuff
                 var outputPath = __instance.GetCargoPath(__instance.beltPool[output0].segPathId);
                 if (outputPath != null && outputPath.TestBlankAtHead() == 0)
                 {
-                    outputPath.TryInsertItemAtHead(filter);
+                    outputPath.TryInsertItemAtHead(filter,1,0);
                 }
             }
             return true;
